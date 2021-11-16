@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 06</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: large;
+            background-image: url(images/im1.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 150px 200px;
+        }
+
+        h1 {
+            margin-left: 120px;
+        }
+
+        [type="button"] {
+            font-family: sans-serif;
+            font-size: 30px;
+            margin-top: 30px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 50px;
+            padding-right: 50px;
+            margin-left: 180px;
+            background-color: thistle;
+            border-radius: 30px;
+        }
+
+        [type="text"] {
+
+            padding: 15px 15px;
+            border-radius: 10px;
+        }
+
+        table,
+        th,
+        td {
+            padding: 8px 15px;
+            border: 1px solid black;
+            text-align: left;
+        }
+        #display{
+       margin-top: 20px;
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <caption>
+            <h1> Sharon Bibiliophile's Stop</h1>
+        </caption>
+        <table id='bookTable' border="1">
+            <tr>
+                <th>
+                    <h2>Product</h2>
+                </th>
+                <th>
+                    <h2>Genre</h2>
+                </th>
+                <th>
+                    <h2>Price</h2>
+                </th>
+                <th>
+                    <h2>Quantity</h2>
+                </th>
+            </tr>
+            <!--First product-->
+            <tr>
+                <td>World tomorrow</td>
+                <td>Science-Fiction</td>
+                <td>350</td>
+                <td>
+                    <label for="quantity1"></label>
+                    <input type="text" id="quantity1" placeholder="Enter quantity in numbers">
+                </td>
+            </tr>
+            <!--Second product-->
+            <tr>
+                <td>Goosebumps</td>
+                <td>Horror</td>
+                <td>550</td>
+                <td>
+                    <label for="quantity2"></label>
+                    <input type="text" id="quantity2" placeholder="Enter quantity in numbers">
+                </td>
+            </tr>
+            <!--Third product-->
+            <tr>
+                <td>Famous Five</td>
+                <td>Adventure</td>
+                <td>350</td>
+                <td>
+                    <label for="quantity3"></label>
+                    <input type="text" id="quantity3" placeholder="Enter quantity in numbers">
+                </td>
+            </tr>
+            <!--Fourth product-->
+            <tr>
+                <td>Percy Jackson</td>
+                <td>Fantasy</td>
+                <td>700</td>
+                <td>
+                    <label for="quantity4"></label>
+                    <input type="text" id="quantity4" placeholder="Enter quantity in numbers">
+                </td>
+            </tr>
+            <!--Fifth product-->
+            <tr>
+                <td>Secret Seven</td>
+                <td>Adventure</td>
+                <td>200</td>
+                <td>
+                    <label for="quantity5"></label>
+                    <input type="text" id="quantity5" placeholder="Enter quantity in numbers">
+                </td>
+            </tr>
+            <!--Sixth product-->
+            <tr>
+                <td>Harry Potter Novel</td>
+                <td>Fantasy</td>
+                <td>850</td>
+                <td>
+                    <label for="quantity6"></label>
+                    <input type="text" id="quantity6" placeholder="Enter quantity in numbers">
+                </td>
+            </tr>
+
+        </table>
+        <input id="entry" type="button" value="ORDER" onclick="order()">
+    </div>
+
+    <div>
+        <table id="display">
+            <tr>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 06</title>
+    <style>
+        body{
+            margin-left: 20px;
+            background-image: url(images/im2.webp);
+            background-repeat: no-repeat;
+            background-size: 600px;
+            background-position: cover;
+           
+        }
+        h1{
+            text-align: center;
+          background-color: white;
+        }
+        [type='button']{
+            padding: 40px 100px ;
+            margin-left: 600px;
+            text-align: center;
+            background-color: black;
+            color: white;
+           font-size: 40px;
+            border-radius: 20px;
+        }
+    </style>
+    <script>
+        function buy(){
+            window.open('home.html');
+        } 
+    </script>
+</head>
+<body>
+    <h1>Buy an item to place your Order!</h1>
+    <input type="button" value="BUY" onclick="buy()">
+</body>
+</html>
